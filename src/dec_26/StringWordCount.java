@@ -10,20 +10,21 @@ public class StringWordCount {
 		System.out.println("Enter Any String to Count Words In it.");
 		String str = sc.nextLine();
 		sc.close();
+		String str1 = str.trim();
 		
-		int count=0;
-		
-		char ch[] = new char[str.length()];
-		
-		for(int i=0; i < str.length(); i++) {
+		int count=1;
+		if(str1.length()<1)
+			System.out.println(0);
+		else
+		{
+		for(int i= 0; i < str1.length(); i++) {
 			
-			ch[i]= str.charAt(i);
-			
-			if(((i==0)&& ch[0]!=' ') || ((i > 0)&&ch[i]!=' ')&& ch[i-1]==' ') {
+			if(((str1.charAt(i)==' ') || (str1.charAt(i)=='\t')) && ((str1.charAt(i-1)!=' ') && (str1.charAt(i-1)!='\t'))){
 				count++;
 			}
 		}
 		System.out.println(count);
+	}
 	}
 
 }
