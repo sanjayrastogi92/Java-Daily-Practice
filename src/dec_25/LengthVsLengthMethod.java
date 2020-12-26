@@ -12,7 +12,7 @@ public class LengthVsLengthMethod {
 		
 		//length is final variable and it returns the size of the array.
 		System.out.println(arr.length);
-
+		
 	}
 
 }
