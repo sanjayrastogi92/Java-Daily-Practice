@@ -8,6 +8,7 @@ public class StringToChar {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter any string");
 		String str = sc.nextLine();
+		sc.close();
 		
 		char ch[] = new char[str.length()];
 		

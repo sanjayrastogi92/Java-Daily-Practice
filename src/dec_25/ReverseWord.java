@@ -10,6 +10,7 @@ public class ReverseWord{
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the string to reverse word");
 		String str = sc.nextLine();
+		sc.close();
 		
 		String tokens[] = str.split(" ");
 		int tokenLen = tokens.length;

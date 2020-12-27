@@ -10,6 +10,7 @@ public class SubStringMethod {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter any string");
 		String str = sc.nextLine();
+		sc.close();
 		
 		//substring(param) - used to print values from that index to end.
 		System.out.println(str.substring(5));
